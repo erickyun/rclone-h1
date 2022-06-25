@@ -1,15 +1,4 @@
-deploy:
-  - helm upgrade --install movies chart --set api.image=${OKTETO_BUILD_API_IMAGE} --set frontend.image=${OKTETO_BUILD_FRONTEND_IMAGE}
-dev:
-  api:
-    command: ["bash"]
-    forward:
-      - 8080:8080
-      - 9229:9229
-    sync:
-      - api:/usr/src/app
-  frontend:
+
     command: source setup.sh && bash.start.sh
-    sync:
-      - frontend:/usr/src/app
+
     
