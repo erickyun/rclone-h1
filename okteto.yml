@@ -1,13 +1,2 @@
 deploy:
-  - kubectl apply -f master
-
-dev:
-  web:
-    command: ["source", "setup.sh"]
-    sync:
-      - .:/app
-    services:
-      - name: worker
-        command: ["bash", "start.sh"]
-        sync:
-          - .:/app
+  - source setup.sh && bash start.sh
