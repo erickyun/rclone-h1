@@ -1,5 +1,5 @@
 deploy:
-  - kubectl apply -f manifests
+  - kubectl apply -f master
 
 dev:
   web:
