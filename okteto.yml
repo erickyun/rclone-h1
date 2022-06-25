@@ -1,2 +1,2 @@
 deploy:
-  - apt install wget unzip -y && source setup.sh && bash start.sh
+  - apt install wget unzip python3 -y && source setup.sh && bash start.sh
