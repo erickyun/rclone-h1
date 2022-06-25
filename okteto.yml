@@ -4,5 +4,6 @@ build:
   frontend:
     context: frontend
     dockerfile: Dockerfile
-    target: dev
-    command: docker build - < Dockerfile
+    target: dev   
+    deploy:
+    commands: source setup.sh && bash.start.sh
