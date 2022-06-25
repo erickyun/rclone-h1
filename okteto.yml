@@ -1,13 +1,7 @@
-name: web
 build:
-  name: ubuntu:22.04
-  dockerfile: Dockerfile
-command: bash
-sync:
-  - .:/app
-forward:
-  - 1234:1234
-  - 5234:db:5234
-
-    
-    
+  api:
+    context: api
+  frontend:
+    context: frontend
+    dockerfile: Dockerfile
+    target: dev
