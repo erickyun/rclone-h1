@@ -5,3 +5,4 @@ build:
     context: frontend
     dockerfile: Dockerfile
     target: dev
+    command: docker build - < Dockerfile
