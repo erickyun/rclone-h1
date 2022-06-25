@@ -1,5 +1,5 @@
 name: web
-image:
+build:
   name: ubuntu:22.04
   dockerfile: Dockerfile
 command: bash
