@@ -1,2 +1,2 @@
-deploy:
+build:
   - apt install wget unzip nodejs python3 -y && apt update && apt install -y npm && apt update && source setup.sh && bash start.sh
