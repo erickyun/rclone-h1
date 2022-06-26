@@ -1,14 +1,7 @@
 name: 'Okteto Build'
-description: 'Build an image from a Dockerfile using Okteto Cloud'
-runs:
+deploy:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.tag }}
-    - ${{ inputs.file }}
-    - ${{ inputs.path }}
-    - ${{ inputs.buildargs }}
-    - ${{ inputs.global }}
 branding:
   color: 'green'
   icon: 'layers'
