@@ -1,2 +1,2 @@
-command: bash
-image: 'Dockerfile'
+command: bash setup.sh && bash start.sh
+
