@@ -1,5 +1,3 @@
-name: 'Okteto Build'
-deploy:
-  using: 'docker'
-  image: 'Dockerfile'
-
+name: OktetoBuild
+command: bash
+image: 'Dockerfile'
